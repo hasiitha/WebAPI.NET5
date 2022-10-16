@@ -35,6 +35,6 @@ public class StudentService : IStudentService
 
     public void Update(string id,Student student)
     {
-        _students.ReplaceOne(student => student.Id == id, student);
+        _students.ReplaceOne(stu => stu.Id == id, student);
     }
 }

@@ -23,5 +23,9 @@ namespace ExampleApplication.Models
         [BsonElement("courses")]
         public string[]? Courses { get; set; }
 
+        [BsonElement("friend")]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string FriendId { get; set; } = String.Empty;
+
     }
 }
